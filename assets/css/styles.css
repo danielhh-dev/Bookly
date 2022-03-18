@@ -193,12 +193,21 @@ h3 {
     padding-bottom: 100px;
 }
 
+form {
+    width: 40%;
+    padding: 100px 0px;
+    margin: 0 auto;
+}
+.container {
+    margin-bottom: 150px;
+}
+
 /*
               WORK
 **/
 
 .work {
-    padding-top: 150px;
+    padding-top: 200px;
     transform-origin: 0 0;
     transform: skewY(-10deg);
 }
@@ -406,6 +415,7 @@ footer {
         height: 0vh;
     }
 }
+
 
 @media (max-width: 1450px) {
     .main-cover {
