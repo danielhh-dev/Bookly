@@ -88,7 +88,7 @@ header img {
     width: 13px;
     height: 8px;
     margin-left: 10px;
-    background-image: url('./assets/icons/down-arrow.svg');
+    background-image: url('/assets/images/down-arrow.svg');
 }
 main {
     width: 100%;
@@ -113,7 +113,7 @@ main {
     height: 200px;
     margin: 0 auto;
     margin-bottom: 50px;
-    background-image: url("./assets/img/Bitcoin.svg");
+    background-image: url("/assets/images/Bitcoin.svg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -132,107 +132,6 @@ main {
     line-height: 1.6rem;
     color: #757575;
 }
-.main-tables-slider {
-        display: flex;
-        gap: 20px;
-        padding: 0 20px;
-        height: 400px;
-        overflow-x: scroll;
-        overscroll-behavior-x: contain;
-        scroll-snap-type: x proximity;
-}
-.currency-table {
-    scroll-snap-align: center;
-    width: 70%;
-    min-width: 235px;
-    max-width: 500px;
-    height: 360px;
-    margin: 0 auto;
-    font-family: "Inter", sans-serif;
-}
-.currency-table .currency-table__title {
-    margin-bottom: 15px;
-    font-size: 1.8rem;
-    font-weight: bold;
-    line-height: 2.3rem;
-    color: var(--bitcoin-orange);
-}
-.currency-table__container {
-    width: 90%;
-    min-width: 230px;
-    max-width: 300px;
-    height: 250px;
-    margin: 0 auto;
-}
-.currency-table__container table {
-    width: 100%;
-    height: 100%;
-}
-.currency-table__container td {
-    width: 50%;
-    font-size: 1.6rem;
-    font-weight: 500;
-    line-height: 1.9rem;
-    color: var(--grey);
-    background-color: var(--just-white);
-}
-.currency-table__container .table--top-left {
-    border-radius: 15px 0 0 0 ;
-}
-.currency-table__container .table--top-right {
-    border-radius:  0 15px 0 0;
-}                          
-.currency-table__container .table--bottom-left {
-    border-radius:  0 0 0 15px;
-}
-.currency-table__container .table--bottom-right {
-    border-radius:  0 0 15px;
-}
-.currency-table__container .table--right {
-    font-size: 1.4rem;
-    font-weight: normal;
-    line-height: 1.7rem;
-    color: #757575;
-}
-.currency-table__container .down {
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    margin-left: 10px;
-    background-image: url("./assets/icons/trending-down.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.currency-table__container .up {
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    margin-left: 10px;
-    background-image: url("./assets/icons/trending-up.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.currency-table__date {
-    width: 190px;
-    height: 30px;
-    margin: 0 auto;
-    margin-top: 15px;
-    padding: 8px;
-    background-color: var(--soft-orange);
-    border-radius: 8px;
-}
-.currency-table__date p {
-    font-size: 1.2rem;
-    line-height: 1.5rem;
-    font-weight: 300;
-    color: var(--warm-black);
-}
-.currency-table__date--blue {
-    background-color: var(--soft-blue);
-}
-.currency-table .currency-table__title--blue {
-    color: var(--seconday-blue);
-}
 .main-product-detail {
     position: relative;
     width: 100%;
@@ -247,7 +146,7 @@ main {
     height: 25px;
     top: -10px;
     left: calc(50% - 20px);
-    background-image: url("./assets/icons/batata.svg");
+    background-image: url("/assets/images/batata.svg");
 }
 .product-detail__title {
     width: 90%;
@@ -292,16 +191,16 @@ main {
     background-repeat: no-repeat;
 }
 .product-card__icon--clock {
-    background-image: url("./assets/icons/clock.svg");
+    background-image: url("/assets/images/clock.svg");
 }
 .product-card__icon--eye {
-    background-image: url("./assets/icons/eye.svg");
+    background-image: url("/assets/images/eye.svg");
 }
 .product-card__icon--dollar-sign {
-    background-image: url("./assets/icons/dollar-sign.svg");
+    background-image: url("/assets/images/dollar-sign.svg");
 }
 .product-card__icon--check-circle {
-    background-image: url("./assets/icons/check-circle.svg");
+    background-image: url("/assets/images/check-circle.svg");
 }
 .product-card__title {
     margin-bottom: 15px;
@@ -320,7 +219,7 @@ main {
     width: 100%;
     min-width: 320px;
     height: 50vh;
-    background-image: url("./assets/img/bitcoinbaby2x.jpg");
+    background-image: url("/assets/images/bitcoinbaby2x.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -432,7 +331,7 @@ main {
     display: inline-block;
     width: 20px;
     height: 20px;
-    background-image: url("./assets/icons/orange-right-arrow.svg");
+    background-image: url("/assets/images/orange-right-arrow.svg");
     vertical-align: text-bottom;
 }
 footer {
