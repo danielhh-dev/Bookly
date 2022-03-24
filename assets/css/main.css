@@ -8,9 +8,7 @@
 :root {
     /*colores*/
     --bookly-orange: #f7931a;
-    --soft-orange: #ffe9d5;
     --seconday-blue: #1a9af7;
-    --soft-blue: #e7f5ff;
     --warm-black: #171925;
     --black: #2D3047;
     --grey: #d4d4d4;
@@ -21,11 +19,16 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    -webkit-overflow-scrolling: touch;
 }
 html {
     font-size: 62.5%;
     font-family: "DM Sans", sans-serif;
     scroll-behavior: smooth;
+}
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 header {
     position: relative;
@@ -44,21 +47,19 @@ header a {
 }
 header .logo img{
     width: 140px;
-    margin-top: 60px;
+    margin-top: 45px;
 }
 .header__title-container {
     width: 90%;
     min-width: 288px;
-    max-width: 900px;
     height: 218px;
     margin-top: 40px;
     text-align: center;
-    align-self: center;
 }
 .header__title-container .header__button {
     position: absolute;
     left: calc(50% - 150px);
-    top: 270px;
+    top: 275px;
     display: block;
     margin: 35px;
     padding: 15px;
@@ -99,9 +100,10 @@ main {
     margin: 0 auto;
 }
 .main-bookly-container h1 {
-    width: 40%;
+    width: 300px;
     margin-bottom: 30px;
     margin-left: 24px ;
+    text-align: start;
     font-size: 4.8rem;
     font-weight: bold;
     line-height: 6rem;
@@ -113,7 +115,7 @@ main {
     font-size: 1.8rem;
     font-weight: 500;
     text-align: start;
-    line-height: 1.8rem;
+    line-height: 2.2rem;
     color: var(--bookly-orange);
 }
 .main-opinion-detail {
@@ -223,6 +225,7 @@ main {
 }
 .bookly-img-container h2 {
     padding-top: 38px;
+    margin: 0 auto;
     font-size: 2.4rem;
     font-weight: bold;
     line-height: 2.6rem;
@@ -263,6 +266,13 @@ main {
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
 }
+.plans-container-slider::-webkit-scrollbar {
+    display: none;
+}
+.plans-container-slider {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
 .plan-card {
     position: relative;
     scroll-snap-align: center;
@@ -357,4 +367,42 @@ footer .left ul {
 }
 footer img {
     width: 100px;
+}
+@media screen and (min-width:525px) {
+    header {
+        height: 360px; 
+    }
+    .header__title-container .header__button {
+        top: 300px;
+    }
+}
+@media screen and (min-width:769px) {
+    header {
+        height: 450px; 
+    }
+    .header__title-container .header__button {
+        top: 390px;
+    }
+    header .logo img{
+        margin-top: 0px;
+    }
+    .bookly-img-container {
+        display: flex;
+    }
+}
+@media screen and (min-width:1025px) {
+    body {
+        background-color: var(--warm-black);
+    }
+    header {
+        margin-top: 20px;
+        border-radius: 10px;
+    }
+    .bookly-img-container {
+        border-radius: 10px;
+    }
+    .main-bookly-container__title {
+        width: 100%;
+        margin-left: 0;
+    }
 }
