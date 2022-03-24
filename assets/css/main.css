@@ -140,7 +140,7 @@ main {
     position: absolute;
     width: 50px;
     height: 30px;
-    top: 680px;
+    top: 820px;
     left: calc(50% - 10px);
     transform: rotate(-15deg);
     background-image: url("../images/icon.svg");
@@ -224,12 +224,14 @@ main {
     text-align: center;
 }
 .bookly-img-container h2 {
+    width: 200px;
     padding-top: 38px;
-    margin: 0 auto;
-    font-size: 2.4rem;
+    margin-left:30px;
+    font-size: 4.8rem;
     font-weight: bold;
-    line-height: 2.6rem;
+    line-height: 6rem;
     color: var(--just-white);
+    text-align: start;
 }
 .main-plans-container {
     width: 100%;
@@ -404,5 +406,15 @@ footer img {
     .main-bookly-container__title {
         width: 100%;
         margin-left: 0;
+    }
+    .opinion-cards-container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 930px;
+        height: 500px;
+        margin: 0 auto;
+    }
+    .opinion-detail__logo-bottom {
+        top: 680px;  
     }
 }
