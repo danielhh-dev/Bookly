@@ -1,114 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap" rel="stylesheet">
+    <title>Bookly</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="../css/main.css">
 </head>
+
 <body>
-    <header>
-        <a class="logo" href="/index.html"><img src="../images/logo.svg" alt=""></a>
-        <div class="header__title-container">
-            <a class="header__button" href="#plans">Los mejores libros aquí<span></span></a>
-        </div>
-    </header>    
-    <main>
-        <section class="main-bookly-container">
-            <!-- <div class="backgroundImg"></div> -->
-            <div class="main-bookly-container__title">
-                <h1>Descubre nuevas historias</h1>
-                <p>
-                    Consigue antes que nadie las novelas más esperadas del momento.
-                </p>
+    <div class="main-container">
+        <header>
+            <a class="logo" href="../../index.html"><img src="../images/logo.svg" alt=""></a>
+            <div class="container">
+                <button class="click">Los mejores libros aquí<span></span></button>
+                <div class="list">
+                    <button class="links"><a href="./books.html">Libros</a></button>
+                    <button class="links"><a href="./audiobooks.html">Audiolibros</a></button>
+                    <button class="links"><a href="./ebooks.html">Ebooks</a></button>
+                    <button class="links"><a href="./account.html">Mi Cuenta</a></button>
+                </div>
+
             </div>
-        </section>
-        <section class="bookly-img-container">
-            <h2>Ven y conoce nuestras <br>librerías</h2>
-        </section>
-        <section class="main-opinion-detail">
-            <span class="opinion-detail__logo-top "></span>
-            <div class="opinion-detail__title">
-                <h2>Nuestros lectores opinan</h2>
-                <p>Aquí algunas de las experiencias de nuestros usuiarios.</p>
-                <span class="opinion-detail__logo-bottom "></span>
-            </div>
-            <section class="opinion-cards-container">
-                <article class="opinion-card">
-                    <span class="opinion-card__icon opinion-card__icon--clock"></span>
-                    <p class="opinion-card__title">Entregas </p>
-                    <p class="opinion-card__body">
-                        Es la primera vez que pido libros a mi casa y la verdad es que fue bastante rápida la entrega, me llegó el mismo día mi libro.
+        </header>
+        <main>
+            <section class="main-bookly-container">
+                <div class="main-bookly-container__title">
+                    <h1>Descubre nuevas historias</h1>
+                    <p>
+                        Consigue antes que nadie las novelas más esperadas del momento.
                     </p>
-                </article>
-                <article class="opinion-card">
-                    <span class="opinion-card__icon opinion-card__icon--eye"></span>
-                    <p class="opinion-card__title">
-                        Variedad de títulos
-                    </p>
-                    <p class="opinion-card__body">
-                        Con ustedes he encontrado libros que he buscando desde hacía tiempo, me llevo ua buena experiencia.
-                    </p>
-                </article>
-                <article class="opinion-card">
-                    <span class="opinion-card__icon opinion-card__icon--dollar-sign"></span>
-                    <p class="opinion-card__title">
-                        Precios bajos
-                    </p>
-                    <p class="opinion-card__body">
-                        A veces los libros de la escuela son algo costosos, pero aquí los he encontrado a buen precio, ya los recomendé con mis compañeros.
-                    </p>
-                </article>
+                </div>
             </section>
-        </section>
-        <section id="plans" class="main-plans-container">
-            <div class="main-plans-container__title">
-                <h2>Escoge el plan que mejor se ajuste a ti.</h2>
-                <p>Cualquier plan te da acceso completo a nuestra plataforma y leer libros ilimitados.</p>
-            </div>
-            <section class="plans-container-slider">
-                <article class="plan-card">
-                    <div class="plan-card__info">
-                        <h3 class="plan-card__title">Pago Mensual</h3>
-                        <p class="plan-card__price"><span>$</span>19</p>
-                        <p class="plan-card__saving">* Ahorras $129 comparado al plan mensual.</p>
-                        <button class="plan-card__ca">Escoger este <span></span></button>
-                    </div>
-                </article>
-                <article class="plan-card">
-                    <p class="plan-card__recomended">Recomendado</p>
-                    <div class="plan-card__info">
-                        <h3 class="plan-card__title">Pago Anual</h3>
-                        <p class="plan-card__price"><span>$</span>99</p>
-                        <p class="plan-card__saving">Paga una vez al mes desde el día de tu compra.</p>
-                        <button class="plan-card__ca">Escoger este <span></span></button>
-                    </div>
-                </article>
-                <article class="plan-card">
-                    <div class="plan-card__info">
-                        <h3 class="plan-card__title">Fan Bookly</h3>
-                        <p class="plan-card__price"><span>$</span>129</p>
-                        <p class="plan-card__saving">Ahorro infinito (50 cupos) Únete hoy mismo</p>
-                        <button class="plan-card__ca">Escoger este <span></span></button>
-                    </div>
-                </article>
+            <section class="bookly-img-container">
+                <h2>Ven y conoce nuestras <br>librerías</h2>
             </section>
-        </section>
-    </main>
+            <section class="main-opinion-detail">
+                <span class="opinion-detail__logo-top "></span>
+                <div class="opinion-detail__title">
+                    <h2>Nuestros lectores opinan</h2>
+                    <p>Aquí algunas de las experiencias de nuestros usuiarios.</p>
+                    <span class="opinion-detail__logo-bottom "></span>
+                </div>
+                <section class="opinion-cards-container">
+                    <article class="opinion-card">
+                        <span class="opinion-card__icon opinion-card__icon--clock"></span>
+                        <p class="opinion-card__title">Entregas </p>
+                        <p class="opinion-card__body">
+                            Es la primera vez que pido libros a mi casa y la verdad es que fue bastante rápida la
+                            entrega, me llegó el mismo día mi libro.
+                        </p>
+                    </article>
+                    <article class="opinion-card">
+                        <span class="opinion-card__icon opinion-card__icon--eye"></span>
+                        <p class="opinion-card__title">
+                            Variedad de títulos
+                        </p>
+                        <p class="opinion-card__body">
+                            Con ustedes he encontrado libros que he buscando desde hacía tiempo, me llevo ua buena
+                            experiencia.
+                        </p>
+                    </article>
+                    <article class="opinion-card">
+                        <span class="opinion-card__icon opinion-card__icon--dollar-sign"></span>
+                        <p class="opinion-card__title">
+                            Precios bajos
+                        </p>
+                        <p class="opinion-card__body">
+                            A veces los libros de la escuela son algo costosos, pero aquí los he encontrado a buen
+                            precio, ya los recomendé con mis compañeros.
+                        </p>
+                    </article>
+                    <article class="opinion-card">
+                        <span class="opinion-card__icon opinion-card__icon--check-circle"></span>
+                        <p class="opinion-card__title">
+                            Buena atencion
+                        </p>
+                        <p class="opinion-card__body">
+                            Cuano he ido a sus librerías me han recibido con mucha amabilidad y siempre están atentos a
+                            los que necesitas.
+                        </p>
+                    </article>
+                </section>
+            </section>
+            <section id="plans" class="main-plans-container">
+                <div class="main-plans-container__title">
+                    <h2>Escoge el plan que mejor se ajuste a ti.</h2>
+                    <p>Cualquier plan te da acceso completo a nuestra plataforma y leer libros ilimitados.</p>
+                </div>
+                <section class="plans-container-slider">
+                    <article class="plan-card">
+                        <div class="plan-card__info">
+                            <h3 class="plan-card__title">Pago Mensual</h3>
+                            <p class="plan-card__price"><span>$</span>19</p>
+                            <p class="plan-card__saving">* Ahorras $129 comparado al plan mensual.</p>
+                            <button class="plan-card__ca">Escoger este <span></span></button>
+                        </div>
+                    </article>
+                    <article class="plan-card">
+                        <p class="plan-card__recomended">Recomendado</p>
+                        <div class="plan-card__info">
+                            <h3 class="plan-card__title">Pago Anual</h3>
+                            <p class="plan-card__price"><span>$</span>99</p>
+                            <p class="plan-card__saving">Paga una vez al mes desde el día de tu compra.</p>
+                            <button class="plan-card__ca">Escoger este <span></span></button>
+                        </div>
+                    </article>
+                    <article class="plan-card">
+                        <div class="plan-card__info">
+                            <h3 class="plan-card__title">Fan Bookly</h3>
+                            <p class="plan-card__price"><span>$</span>129</p>
+                            <p class="plan-card__saving">Ahorro infinito (50 cupos) Únete hoy mismo</p>
+                            <button class="plan-card__ca">Escoger este <span></span></button>
+                        </div>
+                    </article>
+                </section>
+            </section>
+        </main>
+    </div>
     <footer>
         <section class="left">
             <ul>
-                <li><a href="#">Linkedin</a></li>
-                <li><a href="#">Crunchbase</a></li>
-                <li><a href="#">Hackernews</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Términos y condiciones</a></li>
+                <li><a href="#">Trabajo</a></li>
             </ul>
         </section>
         <section class="right">
-            <a href="index.html"><img src="../images/white-logo.svg" alt="Logo de Bookly"></a>
+            <a href="../../index.html"><img src="../images/white-logo.svg" alt="Logo de Bookly"></a>
         </section>
     </footer>
-    
+    <script>
+        let click = document.querySelector('.click');
+        let list = document.querySelector('.list');
+        click.addEventListener("click", () => {
+            list.classList.toggle('newlist');
+        });
+    </script>
 </body>
+
 </html>
