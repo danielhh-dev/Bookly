@@ -1,72 +1,87 @@
-.main-container {
-    max-width: 1200px;
-    margin: 0 auto;
+.main-bookly-container {
+    width: 100%;
+    height: auto;
+    padding-top: 70px;
+    padding-bottom: 30px;
+    text-align: center;
 
-    .main-bookly-container {
-        width: 100%;
-        height: auto;
-        padding-top: 70px;
-        padding-bottom: 30px;
-        text-align: center;
-
-        &__title {
-            width: 90%;
-            min-width: 288px;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        h1 {
-            width: 300px;
-            margin-bottom: 30px;
-            margin-left: 24px;
-            text-align: start;
-            font-size: 4.8rem;
-            font-weight: bold;
-            line-height: 6rem;
-            color: var(--off-white);
-        }
-
-        p {
-            margin-left: 24px;
-            margin-bottom: 30px;
-            font-size: 1.8rem;
-            font-weight: 500;
-            text-align: start;
-            line-height: 2.2rem;
-            color: $bookly-orange;
-        }
+    &__title {
+        width: 90%;
+        min-width: 288px;
+        max-width: 900px;
+        margin: 0 auto;
     }
 
-    .bookly-img-container {
-        width: 100%;
-        min-width: 320px;
-        height: 50vh;
-        background-image: url("../images/library.jpg");
-        background-position: center;
-        background-size: cover;
+    h1 {
+        width: 300px;
+        margin-bottom: 30px;
+        margin-left: 24px;
+        text-align: start;
+        font-size: 4.8rem;
+        font-weight: bold;
+        line-height: 6rem;
+        color: $off-white;
+    }
+
+    p {
+        margin-left: 24px;
+        margin-bottom: 30px;
+        font-size: 1.8rem;
+        font-weight: 500;
+        text-align: start;
+        line-height: 2.2rem;
+        color: $bookly-orange;
+    }
+}
+
+.bookly-img-container {
+    width: 100%;
+    min-width: 320px;
+    height: 50vh;
+    background-image: url("../images/library.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+
+    h2 {
+        width: 200px;
+        padding-top: 38px;
+        margin-left: 30px;
+        font-size: 4.8rem;
+        font-weight: bold;
+        line-height: 6rem;
+        color: $just-white;
+        text-align: start;
+    }
+}
+
+.main-opinion-detail {
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 20px 10px;
+    background-color: $warm-black;
+
+    &__logo-top {
+        position: absolute;
+        width: 50px;
+        height: 30px;
+        top: -15px;
+        left: calc(50% - 10px);
+        transform: rotate(-15deg);
+        background-image: url("../images/icon.svg");
         background-repeat: no-repeat;
-        text-align: center;
-
-        h2 {
-            width: 200px;
-            padding-top: 38px;
-            margin-left: 30px;
-            font-size: 4.8rem;
-            font-weight: bold;
-            line-height: 6rem;
-            color: $just-white;
-            text-align: start;
-        }
     }
 
-    .main-opinion-detail {
-        position: relative;
-        width: 100%;
-        min-width: 320px;
+    &__title {
+        width: 90%;
+        min-width: 288px;
         height: auto;
-        padding: 20px 10px;
-        background-color: $warm-black;
+        margin: 0 auto;
+        margin-top: 50px;
+        text-align: center;
 
         h2 {
             margin-bottom: 20px;
@@ -75,7 +90,7 @@
             line-height: 2.6rem;
             color: $just-white;
         }
-
+    
         p {
             margin-bottom: 20px;
             font-size: 1.4rem;
@@ -83,212 +98,184 @@
             line-height: 1.8rem;
             color: $grey;
         }
-
-        &__logo-top {
-            position: absolute;
-            width: 50px;
-            height: 30px;
-            top: -15px;
-            left: calc(50% - 10px);
-            transform: rotate(-15deg);
-            background-image: url("../images/icon.svg");
-            background-repeat: no-repeat;
-        }
-
-        &__title {
-            width: 90%;
-            min-width: 288px;
-            height: auto;
-            margin: 0 auto;
-            margin-top: 50px;
-            text-align: center;
-        }
-
-        .opinion-cards-container {
-            display: flex;
-            flex-wrap: wrap;
-            width: 930px;
-            height: 500px;
-            margin: 0 auto;
-
-            .opinion-card {
-                width: 90%;
-                min-width: 288px;
-                max-width: 400px;
-                min-height: 150px;
-                margin: 15px auto;
-                padding: 15px;
-                background-color: $black;
-                border-radius: 5px;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
-
-                &__icon {
-                    display: inline-block;
-                    width: 20px;
-                    height: 20px;
-                    margin-bottom: 10px;
-                    background-size: cover;
-                    background-position: center;
-                    background-repeat: no-repeat;
-
-                    &--clock {
-                        background-image: url("../images/clock.svg");
-                    }
-
-                    &--eye {
-                        background-image: url("../images/eye.svg");
-                    }
-
-                    &--dollar-sign {
-                        background-image: url("../images/dollar-sign.svg");
-                    }
-
-                    &--check-circle {
-                        background-image: url("../images/check-circle.svg");
-                    }
-                }
-                
-                &__title {
-                    margin-bottom: 15px;
-                    font-size: 1.8rem;
-                    font-weight: bold;
-                    line-height: 1.8rem;
-                    color: $just-white;
-                }
-
-                &__body {
-                    font-size: 1.4rem;
-                    font-weight: 500;
-                    line-height: 1.8rem;
-                    color: $grey;
-                }
-
-            }
-        }
     }
-    .main-plans-container {
-        width: 100%;
-        min-width: 320px;
-        padding-bottom: 70px;
-        text-align: center;
 
-        &__title {
+    .opinion-cards-container {
+        .opinion-card {
             width: 90%;
             min-width: 288px;
-            height: auto;
-            margin: 0 auto;
+            max-width: 400px;
+            min-height: 150px;
+            margin: 15px auto;
+            padding: 15px;
+            background-color: $black;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
 
-            h2 {
-                padding-top: 50px;
-                font-size: 2.4rem;
+            &__icon {
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                margin-bottom: 10px;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+
+                &--clock {
+                    background-image: url("../images/clock.svg");
+                }
+
+                &--eye {
+                    background-image: url("../images/eye.svg");
+                }
+
+                &--dollar-sign {
+                    background-image: url("../images/dollar-sign.svg");
+                }
+
+                &--check-circle {
+                    background-image: url("../images/check-circle.svg");
+                }
+            }
+            
+            &__title {
+                margin-bottom: 15px;
+                font-size: 1.8rem;
                 font-weight: bold;
-                line-height: 2.6rem;
-                color: $off-white;
+                line-height: 1.8rem;
+                color: $just-white;
             }
 
-            p {
-                padding-top: 30px;
+            &__body {
                 font-size: 1.4rem;
                 font-weight: 500;
                 line-height: 1.8rem;
-                color: $bookly-orange;
+                color: $grey;
             }
+
+        }
+    }
+}
+
+.main-plans-container {
+    width: 100%;
+    min-width: 320px;
+    padding-bottom: 70px;
+    text-align: center;
+
+    &__title {
+        width: 90%;
+        min-width: 288px;
+        height: auto;
+        margin: 0 auto;
+
+        h2 {
+            padding-top: 50px;
+            font-size: 2.4rem;
+            font-weight: bold;
+            line-height: 2.6rem;
+            color: $off-white;
         }
 
-        .plans-container-slider {
-            display: flex;
-            gap: 20px;
-            padding: 0 20px;
-            height: 316px;
-            overflow-x: scroll;
-            overscroll-behavior-x: contain;
-            scroll-snap-type: x proximity;
-            -ms-overflow-style: none;
-            /* IE and Edge */
-            scrollbar-width: none;
-            /* Firefox */
+        p {
+            padding-top: 30px;
+            font-size: 1.4rem;
+            font-weight: 500;
+            line-height: 1.8rem;
+            color: $bookly-orange;
+        }
+    }
 
-            &::-webkit-scrollbar {
-                display: none;
-            }
+    .plans-container-slider {
+        display: flex;
+        gap: 20px;
+        padding: 0 20px;
+        height: 316px;
+        overflow-x: scroll;
+        overscroll-behavior-x: contain;
+        scroll-snap-type: x proximity;
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
 
-            &::-webkit-scrollbar {
-                display: none;
-            }
+        &::-webkit-scrollbar {
+            display: none;
+        }
 
-            .plan-card {
-                position: relative;
-                scroll-snap-align: center;
-                width: 70%;
-                min-width: 190px;
-                max-width: 300px;
-                height: 250px;
-                margin: 50px auto 0;
-                padding: 0 15px;
-                background-color: $just-white;
-                border-radius: 15px;
-                box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+        .plan-card {
+            position: relative;
+            scroll-snap-align: center;
+            width: 70%;
+            min-width: 190px;
+            max-width: 300px;
+            height: 250px;
+            margin: 50px auto 0;
+            padding: 0 15px;
+            background-color: $just-white;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
 
-                &__recomended {
-                    position: absolute;
-                    width: 120px;
-                    height: 30px;
-                    padding: 6px;
-                    left: calc(50% - 60px);
-                    top: -15px;
-                    font-size: 1.2rem;
-                    background-color: $bookly-orange;
-                    border-radius: 8px;
-                    color: $just-white;
+            &__recomended {
+                position: absolute;
+                width: 120px;
+                height: 30px;
+                padding: 6px;
+                left: calc(50% - 60px);
+                top: -15px;
+                font-size: 1.2rem;
+                background-color: $bookly-orange;
+                border-radius: 8px;
+                color: $just-white;
+                }
 
-                    &__title {
-                        padding-top: 30px;
-                        font-size: 1.4rem;
-                        font-weight: 500;
-                        line-height: 1.8rem;
-                        color: black;
-                    }
+                &__title {
+                    padding-top: 30px;
+                    font-size: 1.4rem;
+                    font-weight: 500;
+                    line-height: 1.8rem;
+                    color: black;
+                }
 
-                    &__price {
-                        padding: 5px 0;
-                        font-size: 5.2rem;
-                        font-weight: bold;
-                        color: black;
+                &__price {
+                    padding: 5px 0;
+                    font-size: 5.2rem;
+                    font-weight: bold;
+                    color: black;
 
-                        span {
-                            font-size: 1.2rem;
-                            font-family: 300;
-                            vertical-align: 25px;
-                        }
-                    }
-
-                    &__saving {
+                    span {
                         font-size: 1.2rem;
-                        color: #757575;
-                    }
-
-                    &__ca {
-                        width: 150px;
-                        height: 48px;
-                        margin-top: 20px;
-                        background-color: $off-white;
-                        border: 2px solid $bookly-orange;
-                        border-radius: 4px;
-                        font-family: "DM Sans", sans-serif;
-                        font-size: 1.4rem;
-                        font-weight: bold;
-                        line-height: 1.8rem;
-                        color: $black;
-
-                        span {
-                            display: inline-block;
-                            width: 20px;
-                            height: 20px;
-                            background-image: url("../images/orange-right-arrow.svg");
-                            vertical-align: text-bottom;
-                        }
+                        font-family: 300;
+                        vertical-align: 25px;
                     }
                 }
+
+                &__saving {
+                    font-size: 1.2rem;
+                    color: #757575;
+                }
+
+                &__ca {
+                    width: 150px;
+                    height: 48px;
+                    margin-top: 20px;
+                    background-color: $off-white;
+                    border: 2px solid $bookly-orange;
+                    border-radius: 4px;
+                    font-family: "DM Sans", sans-serif;
+                    font-size: 1.4rem;
+                    font-weight: bold;
+                    line-height: 1.8rem;
+                    color: $black;
+
+                    span {
+                        display: inline-block;
+                        width: 20px;
+                        height: 20px;
+                        background-image: url("../images/orange-right-arrow.svg");
+                        vertical-align: text-bottom;
+                    }    
+                
             }
         }
     }
@@ -307,5 +294,13 @@
     .main-bookly-container__title {
         width: 100%;
         margin-left: 0;
+    }
+    
+    .opinion-cards-container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 930px;
+        height: 500px;
+        margin: 0 auto;
     }
 }

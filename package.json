@@ -19,7 +19,7 @@
     "url": "https://github.com/danielhh-dev/Bookstore-Daniel-Hernandez/issues"
   },
   "homepage": "https://github.com/danielhh-dev/Bookstore-Daniel-Hernandez#readme",
-  "dependencies": {
+  "devDependencies": {
     "node-sass": "^7.0.1",
     "nodemon": "^2.0.15"
   }

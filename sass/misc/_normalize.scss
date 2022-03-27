@@ -1,3 +1,8 @@
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}    
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -11,6 +16,9 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    background-color: $warm-black;
+}
 main {
     width: 100%;
     height: auto;
@@ -50,11 +58,4 @@ ul {
 
 li {
     margin: 10px 0;
-}
-
-
-@media screen and (min-width:1025px) {
-    body {
-        background-color: var(--warm-black);
-    }
 }
