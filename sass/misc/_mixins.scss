@@ -1,0 +1,13 @@
+//Slider
+
+@mixin  slider($gap, $padding, $height) {
+    display: flex;
+    gap: $gap;
+    padding: $padding;
+    height: $height;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}

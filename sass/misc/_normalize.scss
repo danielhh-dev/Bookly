@@ -17,12 +17,12 @@ html {
 }
 
 body {
-    background-color: $warm-black;
+    background-color: map-get($map: $palette, $key: 'warm-black');
 }
 main {
     width: 100%;
     height: auto;
-    background-color: $warm-black;
+    background-color: map-get($map: $palette, $key: 'warm-black');
 }
 
 header {
@@ -41,12 +41,12 @@ footer {
     display: flex;
     width: 100%;
     height: 150px;
-    background-color: $bookly-orange;
+    background-color: map-get($map: $palette, $key: 'bookly-orange');
 }
 
 a {
     text-decoration: none;
-    color: $just-white;
+    color: map-get($map: $palette, $key: 'just-white');
 }
 
 ul {

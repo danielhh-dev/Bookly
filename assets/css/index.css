@@ -285,9 +285,7 @@ footer img {
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
     -ms-overflow-style: none;
-    /* IE and Edge */
-    scrollbar-width: none;
-    /* Firefox */ }
+    scrollbar-width: none; }
     .main-plans-container .plans-container-slider::-webkit-scrollbar {
       display: none; }
     .main-plans-container .plans-container-slider .plan-card {
@@ -331,7 +329,7 @@ footer img {
       .main-plans-container .plans-container-slider .plan-card__saving {
         font-size: 1.2rem;
         color: #757575; }
-      .main-plans-container .plans-container-slider .plan-card__ca {
+      .main-plans-container .plans-container-slider .plan-card__ca, .main-plans-container .plans-container-slider .plan-card .promotion {
         width: 150px;
         height: 48px;
         margin-top: 20px;
@@ -343,12 +341,16 @@ footer img {
         font-weight: bold;
         line-height: 1.8rem;
         color: #2D3047; }
-        .main-plans-container .plans-container-slider .plan-card__ca span {
+        .main-plans-container .plans-container-slider .plan-card__ca span, .main-plans-container .plans-container-slider .plan-card .promotion span {
           display: inline-block;
           width: 20px;
           height: 20px;
           background-image: url("../images/orange-right-arrow.svg");
           vertical-align: text-bottom; }
+      .main-plans-container .plans-container-slider .plan-card .promotion {
+        background-color: #f7931a;
+        color: #fff;
+        border: none; }
 
 @media screen and (min-width: 769px) {
   .bookly-img-container {
@@ -367,69 +369,72 @@ footer img {
     height: 500px;
     margin: 0 auto; } }
 
-figure {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 270px;
-  height: 387px;
-  border-radius: 10px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  overflow: hidden; }
-  figure:hover {
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
-    figure:hover img {
-      transform: scale(1.25); }
-    figure:hover figcaption {
-      bottom: 0; }
-  figure h1 {
-    position: absolute;
-    top: 50px;
-    left: 20px;
-    margin: 0;
-    padding: 0;
-    color: #fff;
-    font-size: 30px;
-    font-weight: 100;
-    line-height: 1; }
-  figure img {
-    height: 100%;
-    transition: 0.25s; }
-  figure figcaption {
-    position: absolute;
-    bottom: -100%;
-    left: 0;
-    width: 100%;
-    margin: 0;
-    padding: 20px 30px 40px;
-    background-color: rgba(0, 0, 0, 0.85);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-    color: #fff;
-    line-height: 1;
-    transition: 0.25s; }
-    figure figcaption h3 {
-      margin: 0 0 20px;
-      padding: 0; }
-    figure figcaption p {
-      font-size: 14px;
-      line-height: 1.75; }
-    figure figcaption button {
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 10px 0 0;
-      padding: 10px 30px;
-      background-color: #f7931a;
-      border: none;
-      border-radius: 5px;
-      color: #fff;
-      font-size: 14px; }
-
 .parent {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-template-rows: repeat(3, 1fr);
-  grid-row-gap: 60px; }
+  grid-gap: 90px;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-content: space-evenly;
+  align-items: center;
+  margin-bottom: 150px; }
+  .parent figure {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 387px;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    overflow: hidden; }
+    .parent figure:hover {
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+      .parent figure:hover img {
+        transform: scale(1.25); }
+      .parent figure:hover figcaption {
+        bottom: 0; }
+    .parent figure h1 {
+      position: absolute;
+      top: 50px;
+      left: 20px;
+      margin: 0;
+      padding: 0;
+      color: #fff;
+      font-size: 30px;
+      font-weight: 100;
+      line-height: 1; }
+    .parent figure img {
+      height: 100%;
+      transition: 0.25s; }
+    .parent figure figcaption {
+      position: absolute;
+      bottom: -100%;
+      left: 0;
+      width: 100%;
+      margin: 0;
+      padding: 20px 30px 40px;
+      background-color: rgba(0, 0, 0, 0.85);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+      color: #fff;
+      line-height: 1;
+      transition: 0.25s; }
+      .parent figure figcaption h3 {
+        margin: 0 0 20px;
+        padding: 0; }
+      .parent figure figcaption p {
+        font-size: 14px;
+        line-height: 1.75; }
+      .parent figure figcaption button {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 0 0;
+        padding: 10px 30px;
+        background-color: #f7931a;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        font-size: 14px; }
