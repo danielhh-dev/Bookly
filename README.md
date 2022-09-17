@@ -7,9 +7,6 @@
   <a href="https://github.com/danielhh-dev/Bookstore-Daniel-Hernandez/graphs/commit-activity" target="_blank">
     <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
   </a>
-  <a href="https://opensource.org/licenses/MIT" target="_blank">
-    <img alt="License: MIT" src="https://img.shields.io/github/license/danielhh-dev/Bookstore" />
-  </a>
 </p>
 
 > This is my first project using SCSS, a web that simulates a book store hompage, using only HTML/CSS
