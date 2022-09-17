@@ -7,6 +7,9 @@
   <a href="https://github.com/danielhh-dev/Bookstore-Daniel-Hernandez/graphs/commit-activity" target="_blank">
     <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
   </a>
+    <a href="#" target="_blank">
+    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
+  </a>
 </p>
 
 > This is my first project using SCSS, a web that simulates a book store hompage, using only HTML/CSS
@@ -19,7 +22,7 @@
 
 * Website: https://bookly-shop.netlify.app/PORTFOLIO
 * Github: [@danielhh-dev](https://github.com/danielhh-dev)
-* LinkedIn: [@https:\/\/www.linkedin.com\/in\/danielhhdev\/](https://linkedin.com/in/https:\/\/www.linkedin.com\/in\/danielhhdev\/)
+* LinkedIn: [@danielhhdev](https://linkedin.com/in/danielhhdev/)
 
 ## 🤝 Contributing
 
